@@ -28,6 +28,10 @@ public class Main {
 
         jeep.setName("Lada");
 
+        System.out.println(jeep.toString());
+
+        System.out.println();
+
         System.out.println("Name : " + jeep.getName());
         System.out.println("Color : " + jeep.getColor());
         System.out.println("Speed : " + jeep.getSpeed());
