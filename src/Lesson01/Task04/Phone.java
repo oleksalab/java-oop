@@ -4,7 +4,10 @@ import java.util.Objects;
 
 public class Phone {
 
-    String number;
+    private String number;
+
+    public Phone() {
+    }
 
     public Phone(String number) {
 

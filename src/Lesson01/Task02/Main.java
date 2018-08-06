@@ -11,9 +11,9 @@ public class Main {
 
         // вариант #1
         Triangle abc1 = new Triangle();
-        abc1.sideA = 3;
-        abc1.sideB = 4;
-        abc1.sideC = 5;
+        abc1.setSideA(3);
+        abc1.setSideB(4);
+        abc1.setSideC(5);
 
         System.out.println("Площадь треугольника #1 = " + String.format("%.3f", abc1.calcArea()));
 

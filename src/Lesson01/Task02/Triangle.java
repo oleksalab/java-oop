@@ -2,9 +2,9 @@ package Lesson01.Task02;
 
 public class Triangle {
 
-    int sideA;
-    int sideB;
-    int sideC;
+    private int sideA;
+    private int sideB;
+    private int sideC;
 
     public Triangle() {
     }

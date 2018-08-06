@@ -2,8 +2,11 @@ package Lesson01.Task04;
 
 public class Network {
 
-    String name;
-    Phone[] phones;
+    private String name;
+    private Phone[] phones;
+
+    public Network() {
+    }
 
     public Network(String name, int limit) {
 
