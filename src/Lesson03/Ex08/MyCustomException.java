@@ -1,4 +1,4 @@
-package Lesson03.Lesson08;
+package Lesson03.Ex08;
 
 public class MyCustomException extends Exception {
 
