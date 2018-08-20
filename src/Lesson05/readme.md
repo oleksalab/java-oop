@@ -18,4 +18,17 @@ java.nio.*;
 Reader/Writer - работают с текстовыми/строковыми данными
 InputStream/OutputStream - работают с данными в байтовом представлении
 
+## Домашние задания :
+
+- Задание 5-01. скопировать файлы заданного типа из одной папки в другую
+https://github.com/oleksalab/java-oop/tree/master/src/Lesson05/Task01
+
+- Задание 5-02. объединить два текстовых файла в один
+https://github.com/oleksalab/java-oop/tree/master/src/Lesson05/Task02
+
+- Задание 5-03. модернизация класса - сохранение данных о группе студентов в файл
+https://github.com/oleksalab/java-oop/tree/master/src/Lesson05/Task03
+
+- Задание 5-04. модернизация класса - чтение данных о группе студентов из файла и создать на их основе объект типа группа
+https://github.com/oleksalab/java-oop/tree/master/src/Lesson05/Task04
 
