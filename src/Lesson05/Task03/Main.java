@@ -41,8 +41,7 @@ public class Main {
 
         // сохранение данных в файл
         System.out.print("Сохраняем данные о группе в файл : ");
-        group.saveGroup(groupFile);
+        System.out.println(group.saveGroup(groupFile) ? "Готово" : "Нет данных!");
 
-        System.out.println("Готово!");
     }
 }

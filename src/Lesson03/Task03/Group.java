@@ -26,6 +26,8 @@ public class Group {
 
                 String[] data = line.split(",");
                 this.add(new Student(data[0], Integer.valueOf(data[1]), data[2], data[3]));
+
+                result = true;
             }
 
         } catch (IOException ioe) {
@@ -49,9 +51,9 @@ public class Group {
                 line = student.getName() + ',' + student.getYear() + ',' + student.getHome() + ',' + student.getCollege();
                 file.write(line);
                 file.write(System.lineSeparator());
-            }
 
-            result = true;
+                result = true;
+            }
 
         } catch (IOException ioe) {
 

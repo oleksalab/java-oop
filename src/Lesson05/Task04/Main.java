@@ -13,15 +13,14 @@ public class Main {
 
         String srcFile = "out/groupData.txt";
 
-        System.out.println("Чтение данных о группе из файла : ");
-
         Group group = new Group();
 
-        try {
-            // читаем данныем группы из файла
-            group.loadGroup(srcFile);
+        System.out.println("Чтение данных о группе из файла : ");
 
-            System.out.println("Готово!");
+        try {
+
+            // читаем данныем группы из файла
+            System.out.println(group.loadGroup(srcFile) ? "Готово" : "Нет данных!");
 
         } catch (GroupFullException gfe) {
 
