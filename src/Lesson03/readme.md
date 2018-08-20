@@ -33,3 +33,15 @@ try {
 }
 ```
 
+## Домашние задания :
+
+Задание 3-01. класс описывающий человека и метод для вывода информации о нём
+https://github.com/oleksalab/java-oop/tree/master/src/Lesson03/Task01
+
+Задание 3-02. класс описывающий студента на основе класса человек и переопределить метод вывода информации
+https://github.com/oleksalab/java-oop/tree/master/src/Lesson03/Task02
+
+Задание 3-03. класс описывающий группу из 10 студентов с методами добавления, удаления, сортировкой и исключениями
+https://github.com/oleksalab/java-oop/tree/master/src/Lesson03/Task03
+
+
