@@ -1,6 +1,10 @@
 package Lesson03.Task03;
 
 import Lesson03.Task02.Student;
+import Lesson03.Task03.GroupFullException;
+import Lesson03.Task03.UnknownStudentException;
+
+import java.io.*;
 
 public class Group {
 
@@ -9,6 +13,52 @@ public class Group {
     public Group() {
 
         this.students = new Student[10];
+    }
+
+    public boolean loadGroup(String filePath) throws GroupFullException {
+
+        boolean result = false;
+
+        try (BufferedReader file = new BufferedReader(new FileReader(filePath))) {
+
+            String line = "";
+            while ((line = file.readLine()) != null) {
+
+                String[] data = line.split(",");
+                this.add(new Student(data[0], Integer.valueOf(data[1]), data[2], data[3]));
+            }
+
+        } catch (IOException ioe) {
+
+            ioe.printStackTrace();
+        }
+
+        return result;
+    }
+
+    // сохранение данных о группе в файл
+    public boolean saveGroup(String filePath) {
+
+        boolean result = false;
+
+        try (BufferedWriter file = new BufferedWriter(new FileWriter(filePath))) {
+
+            String line = "";
+            for (Student student : students) {
+
+                line = student.getName() + ',' + student.getYear() + ',' + student.getHome() + ',' + student.getCollege();
+                file.write(line);
+                file.write(System.lineSeparator());
+            }
+
+            result = true;
+
+        } catch (IOException ioe) {
+
+            ioe.printStackTrace();
+        }
+
+        return result;
     }
 
     public boolean add(Student student) throws GroupFullException {
@@ -54,7 +104,7 @@ public class Group {
         for (int i = 0; i < students.length; i++) {
 
             result.append(students[i]);
-            result.append("\n");
+            result.append(System.lineSeparator());
         }
 
         return result.toString();

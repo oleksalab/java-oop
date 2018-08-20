@@ -29,12 +29,12 @@ public class Main {
     }
 
     // запись текстового файла
-    private static void saveFile(String resultFile, String text) {
+    private static void saveFile(String filePath, String text) {
 
-        try (BufferedWriter f = new BufferedWriter(new FileWriter(resultFile))) {
+        try (BufferedWriter file = new BufferedWriter(new FileWriter(filePath))) {
 
-            f.write(text);
-            f.newLine();
+            file.write(text);
+            file.newLine();
 
         } catch (IOException ioe) {
 
