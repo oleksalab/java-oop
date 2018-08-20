@@ -13,6 +13,7 @@ public class Main {
 
         String srcFile = "out/groupData.txt";
 
+        // создаём объект для группы
         Group group = new Group();
 
         System.out.println("Чтение данных о группе из файла : ");
