@@ -72,7 +72,6 @@ public class Ex03 {
         }
     }
 
-
     // запись текстового файла
     private static void saveFile(String filePath, String text) {
 
