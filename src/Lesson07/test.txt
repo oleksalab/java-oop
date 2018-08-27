@@ -1,0 +1,48 @@
+
+int i = 8;
+sout(i++); - сначала вывод потом инкремент
+sout(i+1);
+sout(i);
+
+---
+
+public class A {
+
+    {
+        sout("dynamic A");
+    }
+
+    static {
+
+        sout("static A");
+    }
+
+    A(){
+        sout("A");
+    }
+
+}
+
+public class A {
+
+    {
+        sout("dynamic A");
+    }
+
+    static {
+
+        sout("static A");
+    }
+
+    A(){
+        sout("A");
+    }
+
+}
+
+psvm() {
+
+    new B();
+}
+
+---
