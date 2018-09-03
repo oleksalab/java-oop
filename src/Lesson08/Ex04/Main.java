@@ -19,11 +19,14 @@ public class Main {
         System.out.println("\nИндекс : " + a.indexOf(123));
 
         System.out.println("\nИтераторы :");
+
         Iterator<Integer> itr = a.iterator();
         for (; itr.hasNext(); ) {
 
             System.out.println("элемент : " + itr.next());
 
         }
+
+
     }
 }
