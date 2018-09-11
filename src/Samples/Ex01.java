@@ -33,7 +33,7 @@ public class Ex01 {
 
     public static void periodExample() {
         LocalDate today = LocalDate.now();
-        LocalDate birthday = LocalDate.of(1981, Month.NOVEMBER, 11);
+        LocalDate birthday = LocalDate.of(1990, Month.AUGUST, 18);
         Period p = Period.between(birthday, today);
         System.out.println("### Period Example ###");
         System.out.println("You are " + p.getYears() + " years, " + p.getMonths() +
